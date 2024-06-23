@@ -24,7 +24,7 @@ To have this template work as expected, you will need to do in the specified ord
 
 ### Let's start with the main deployment script
 
-```bicep
+```Bicep
 // Showing some params for better understanding of the following code, use as you wish of course.
 @description('The name of the SQL logical server.')
 param name string = '${resourceGroup().name}-${uniqueId}-sql'
@@ -115,7 +115,7 @@ resource sqlDeploy 'Microsoft.Sql/servers@2020-11-01-preview' = {
 
 ### waitBeforeCheck module
 
-```bicep
+```C#
 param sleepingTime int
 param name string
 param location string
