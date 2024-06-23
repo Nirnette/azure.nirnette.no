@@ -2,7 +2,8 @@
 
 As of June 2024, the bicep template provided for SQL servers/databases/ManagedInstances isn't working with the AADOnly parameter properly (Entra Id)
 
-This solution answers this raised issue: [Github issue](https://github.com/Azure/bicep-types-az/issues/1436)
+>[!note]
+>This solution answers this raised issue: [Github issue](https://github.com/Azure/bicep-types-az/issues/1436)
 
 This is due to the requirement for a SQL account at resource creation, and even if Microsoft is working for a solution to find the resource existence before deployment (without failing it if it doesn't...), today there is no Microsoft provided solution for a "fit all cases" SQL template.
 
