@@ -9,10 +9,8 @@ Why only successful logins? Because those have real value when coming from unusu
 Since there is no list of countries you can fetch from Graph or other Azure logs (as far as I could find), you need to first create a table in your query with ISo-2 country codes (used by azure) and provide full name for human readibility.
 
 ### KQL variable to have the list of countries
-<details>
 
-<summary> Click to see the full country variable</summary>
-
+(sorry that it is this long, queries are below )
 
 ```
 let countryCSV = datatable (countryCode: string, CountryName: string)  
@@ -268,7 +266,6 @@ let countryCSV = datatable (countryCode: string, CountryName: string)
 "ZW","Zimbabwe" 
 ]; 
 ```
-</details>
 
 So now that you have the list of countries with their names, you need to forward these logs to a Log Analytics Workspace:
 - SigninLogs
