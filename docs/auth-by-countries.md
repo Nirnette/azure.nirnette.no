@@ -10,7 +10,9 @@ Since there is no list of countries you can fetch from Graph or other Azure logs
 
 ### KQL variable to have the list of countries
 <details>
+
 <summary> Click to see the full country variable</summary>
+
 
 ```Powershell
 let countryCSV = datatable (countryCode: string, CountryName: string)  
