@@ -14,7 +14,7 @@ Since there is no list of countries you can fetch from Graph or other Azure logs
 <summary> Click to see the full country variable</summary>
 
 
-```Powershell
+```csharp
 let countryCSV = datatable (countryCode: string, CountryName: string)  
 [ 
 "AD","Andorra", 
@@ -281,7 +281,7 @@ Some examples:
 
 ### Query for monitor connections from a list of countries
 
-```Powershell
+```csharp
 let countryCSV = datatable (countryCode: string, CountryName: string)  
 [ 
 "AD","Andorra", 
@@ -305,7 +305,7 @@ union SigninLogs, AADNonInteractiveUserSignInLogs
 
 ### Query to monitor all connections outside of a country list
 
-```Powershell
+```csharp
 let countryCSV = datatable (countryCode: string, CountryName: string)  
 [ 
 "AD","Andorra", 
